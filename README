@@ -1,0 +1,3 @@
+(2009.03.08)
+Python package to plot box office data.
+Example: python paths.py -c hancock

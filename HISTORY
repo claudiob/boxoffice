@@ -1,0 +1,7 @@
+1.0 (2009.03.08)
+Basic functions implemented:
+- parse BoxOfficeMojo page for daily and weekend grosses and cumes
+- uses Google API Chart to display a bar chart in a web page
+TO DO:
+- plot multiple movies
+- personalise graph through command-line parameters
