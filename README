@@ -1,3 +1,11 @@
-(2009.03.08)
-Python package to plot box office data.
-Example: python paths.py -c hancock
+Python package to plot box office data retrieved from BoxOfficeMojo.
+Example: 
+
+python paths.py -w slumdogmillionaire
+
+Shows daily box office results for "Slumdog Millionaire"
+
+python paths.py -c  slumdogmillionaire curiouscaseofbenjaminbutton
+
+Comparse cumulative results for "Slumdog Millionaire" and "The curious case of Benjamin Button"
+
