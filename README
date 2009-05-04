@@ -1,11 +1,13 @@
-Python package to plot box office data retrieved from BoxOfficeMojo.
-Example: 
+Python package to plot box office data retrieved from BoxOfficeMojo
 
-python paths.py -w slumdogmillionaire
+Examples 
+========
 
-Shows daily box office results for "Slumdog Millionaire"
+python boxofficemojo.py -w slumdogmillionaire
 
-python paths.py -c  slumdogmillionaire curiouscaseofbenjaminbutton
+Returns daily box office results for "Slumdog Millionaire"
 
-Comparse cumulative results for "Slumdog Millionaire" and "The curious case of Benjamin Button"
+<WebServer>/boxoffice.cgi?id=et,titanic?cume=1
+
+Plots a bar graph of compared cumulative results for "Titanic" and "E.T."
 

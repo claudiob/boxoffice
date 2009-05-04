@@ -1,0 +1,3 @@
+2009.05.04
+- Reduce HTTP requests longer than 2048 characters (too long for Google Chart)
+- Allow boxoffice.cgi to be called also by command line, accepting inline args

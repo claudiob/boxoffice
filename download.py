@@ -12,7 +12,6 @@ from time import sleep
 import urllib
 import socket
 import logging
-import unittest
 
 __author__ = "Claudio Baccigalupo"
 
@@ -23,13 +22,13 @@ def try_open(url):
 		return resp
 	except:
 		logging.warn("URL open error on " + url + ", retry 1")
-		sleep(.5)
+		sleep(2)
 		try:
 			resp = urllib.urlopen(url)
 			return resp
 		except:
 			logging.warn("URL open error, retry 2")
-			sleep(.5)
+			sleep(2)
 			try:
 				resp = urllib.urlopen(url)
 				return resp
@@ -59,13 +58,3 @@ def download_page(url):
     resp.close()
     return page
     
-
-
-class TestDownload(unittest.TestCase):
-    def testDownload(self):
-        page = download_page("http://www.myspace.com")
-        self.assertTrue(page.find("MySpace") > 0)
-        # Add more tests if needed
-
-if __name__ == '__main__':
-    unittest.main()
